@@ -1,0 +1,87 @@
+body{
+    background-color: rgb(26, 25, 25);
+    
+}
+.all{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 
+    "nav nav"
+    "c1 c1"
+    "form form"
+    "project project"
+    "img img "
+    "foot foot"
+    ;
+
+
+}
+.nav{
+    width: 100%;
+    grid-area: nav;
+    background-color: black;
+    color: white;
+}
+.c1{grid-area: c1;
+    display: flex;
+    padding: 20px;
+}
+span{
+    text-decoration-line: underline;
+    text-decoration-color: green;
+    
+}
+.c1 img{
+    z-index: 0;
+}
+.c1 .d{
+    font-family: Georgia,  serif;
+    width: 100%;
+    z-index: 1;
+
+    padding: 20px;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;  
+}
+.form{
+    grid-area: form;   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 3px;
+    padding: 20px;
+    
+    color: white;
+}
+.project{
+    grid-area: project;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img{
+    padding: 5px;
+    grid-area: img;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    
+}
+.foot{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.foot input{
+    background-color: black;
+}
+.foot form{
+    display: flex;
+    
+}
+
